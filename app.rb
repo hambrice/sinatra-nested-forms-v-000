@@ -12,7 +12,7 @@ module FormsLab
     end
 
     post '/pirates' do
-      binding.pry
+      #binding.pry
       @pirate = Pirate.new(params["pirate"]["name"], params["pirate"]["height"], params["pirate"]["weight"])
       @ship_1 = Ship.new(params["pirate"]["ships"][0]["name"],params["pirate"]["ships"][0]["type"], params["pirate"]["ships"][0]["booty"])
       @ship_2 = Ship.new(params["pirate"]["ships"][1]["name"], params["pirate"]["ships"][1]["type"], params["pirate"]["ships"][1]["booty"])
