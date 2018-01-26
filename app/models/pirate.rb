@@ -1,10 +1,10 @@
 class Pirate
   attr_accessor :name, :weight, :height
   @@all = []
-  def initialize(hash)
-    @name = hash[:name]
-    @weight = hash[:weight]
-    @height = hash[:height]
+  def initialize(name, height, weight)
+    @name = name
+    @weight = weight
+    @height = height
     @@all << self
   end
   def self.all
