@@ -2,10 +2,11 @@ require './environment'
 require 'pry'
 module FormsLab
   class App < Sinatra::Base
+    set :views, Proc.new { File.join(root, "views/pirates") }
+
     get '/' do
       erb :root
     end
-set :views, Proc.new { File.join(root, "views/pirates") }
     get '/new' do
       erb :new
     end
