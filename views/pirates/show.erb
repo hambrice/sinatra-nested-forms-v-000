@@ -1,5 +1,5 @@
 <h1><%= "#{@pirate.name}, #{@pirate.height}, #{@pirate.weight}" %></h1>
 
-<% Ship.all do |ship| %>
+<% Ship.all.each do |ship| %>
 <h2><%=  "#{ship.name}, #{ship.type}, #{ship.booty}"%></h2>
 <% end %>
